@@ -1,19 +1,25 @@
 {
 	"root": true,
 	"parser": "babel-eslint",
-	"plugins": ["prettier", "flowtype", "jest"],
+	"plugins": [
+		"jest"
+	],
 	"env": {
 		"es6": true,
 		"node": true,
 		"jest/globals": true
 	},
-	"extends": ["airbnb", "prettier", "plugin:jest/recommended"],
+	"extends": [
+		"airbnb",
+		"plugin:jest/recommended"
+	],
 	"rules": {
-		"prettier/prettier": "error",
 		"no-console": "off",
-		"indent": ["error", "tab"],
 		"operator-linebreak": "off",
-		"arrow-parens": ["warn", "as-needed"],
+		"arrow-parens": [
+			"warn",
+			"as-needed"
+		],
 		"no-underscore-dangle": "off",
 		"no-param-reassign": "off",
 		"react/no-this-in-sfc": "off",
@@ -28,21 +34,13 @@
 		"no-trailing-spaces": "warn",
 		"vars-on-top": "warn",
 		"space-before-function-paren": "warn",
-		"quotes": [1, "single"],
-		"semi": [1, "always"],
-		"flowtype/require-parameter-type": 2,
-		"flowtype/require-return-type": [
-			"warn",
-			"always",
-			{ "annotateUndefined": "always" }
+		"quotes": [
+			1,
+			"single"
 		],
-		"flowtype/space-after-type-colon": ["warn", "always"],
-		"flowtype/space-before-type-colon": ["warn", "never"],
-		"flowtype/type-id-match": [2, "^([A-Z][a-z0-9]+)+Type$"]
-	},
-	"settings": {
-		"flowtype": {
-			"onlyFilesWithFlowAnnotation": true
-		}
+		"semi": [
+			1,
+			"always"
+		]
 	}
 }
