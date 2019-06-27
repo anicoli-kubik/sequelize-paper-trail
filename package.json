@@ -71,7 +71,6 @@
 		"sqlite3": "^4.0.6"
 	},
 	"dependencies": {
-		"continuation-local-storage": "^3.2.1",
 		"deep-diff": "^1.0.2",
 		"diff": "^4.0.1",
 		"lodash": "^4.17.11"
